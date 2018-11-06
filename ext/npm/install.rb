@@ -1,4 +1,4 @@
-require_relative '../../lib/npm_commands'
+require_relative '../../lib/yarn_commands'
 
-NpmCommands.new.install('--production', '.') ||
+YarnCommands.new.install('--production', '.') ||
   raise('Error while installing npm dependencies')
