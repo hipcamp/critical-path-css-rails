@@ -11,10 +11,10 @@ class YarnCommands
     end
     STDERR.puts(
       *if install_status
-         ['npm dependencies installed']
+         ['yarn dependencies installed']
        else
          ['-' * 60,
-          'Error: npm dependencies installation failed',
+          'Error: yarn dependencies installation failed',
           '-' * 60]
        end
     )
