@@ -7,7 +7,7 @@ class YarnCommands
     return false unless check_nodejs_installed
     STDERR.puts 'Installing yarn dependencies...'
     install_status = Dir.chdir File.expand_path('..', File.dirname(__FILE__)) do
-      system('yarn', 'install', *args)
+      system('yarn', 'install --ignore-engines', *args)
     end
     STDERR.puts(
       *if install_status
